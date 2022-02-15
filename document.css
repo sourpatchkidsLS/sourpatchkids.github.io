@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+  }
+  h1 {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  h2 {
+      font-family: montserrat, sans-serif;
+      color: #846DCF
+  }
+  h4 {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  p {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  h3 {
+      font-family: montserrat, sans-serif;
+      color: #846DCF
+  }
