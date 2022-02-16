@@ -1,3 +1,3 @@
 function changecolor(){
-    document.getElementById("NameHeading").style.color="white";
+    document.getElementById("NameHeading").style.color="purple";
 }
