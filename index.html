@@ -1,24 +1,172 @@
-<!DOCTYPE html>
 <html>
-    <link rel="stylesheet" type="text/css" href="https://sourpatchkidsLS.github.io/style.css">
-    <script type="text/javascript" src="https://sourpatchkidsLS.github.io/script.js" ></script>
-    <link rel="shortcut icon" href="https://github.com/sourpatchkidsLS/sourpatchkidsLS.github.io/blob/main/icons/favicon.ico"/>
-    <title>sourpatchkids' website</title>
-    <body>
-        <h1><a href="https://discord.com/users/926508334855622726">sourpatchkids#4889</a></h1>
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+  
+    background-color: rgb(25, 25, 25);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  h2 {
+      font-family: montserrat, sans-serif;
+      color: #846DCF
+  }
+  h4 {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  p {
+      font-family: montserrat, sans-serif;
+      color: white
+  }
+  h3 {
+      font-family: montserrat, sans-serif;
+      color: #846DCF    
+  }
+  [data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .tab.active {
+    background-color: #301934;
+  }
+
+
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.li {
+  color: white;
+}
+	</style>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+
+<ul class="tabs">
+  <li data-tab-target="#home" class="active tab">home</li>
+  <li data-tab-target="#discord" class="tab">discord</li>
+  <li data-tab-target="#scripts" class="tab">scripts</li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" data-tab-content class="active">
+    <h1><a href="https://discord.com/users/926508334855622726">sourpatchkids#4889</a></h1>
         <h2>13 * ny * lua dev * gamer * i like luigi * professional at nothing</h2>
-        <h4>stuff that cool people made:</h4>
-        <p><a href="https://7granddadpgn.github.io">Vape V4 For Roblox</a></p>
-        <p><a href="https://moonlight.cool">Moonlight</a></p>
-        <p id="specs" onclick="turnpurple()">phone: apple iphone x, 256gb, black</p>
+    <p id="specs" onclick="turnpurple()">phone: apple iphone x, 256gb, black</p>
         <p id="specs1" onclick="turnpurple1()">pc specs; r5 3600, rtx 3060, 32gb ram, 512gb ssd, 2tb hdd </p>
         <p id="specs2" onclick="turnpurple2()">laptop specs; <a href="https://www.lenovo.com/us/en/p/laptops/ideapad/ideapad-300/ideapad-3-(17%20,-intel)-laptop/81wf004wus?orgRef=https%253A%252F%252Fwww.bing.com%252F&cid=us:sem|se|msn|ca+shopping+brand+lv+intel|gs_notebooks||81WF004WUS|291507551|1266637630022326|pla-4582764467272251|shopping|brand&msclkid=ac9a2bc7c2d61b942d0949ccc68b2d03">lenovo ideapad 3</a> {intel i7 1065g7, 4 cores, 8 threads, 8gb ram, i also have a macbook pro 2019} </p>
-        <br>
-        <br>
-        <h3>things abt me on discord:</h3>
+  </div>
+  <div id="discord" data-tab-content>
+    <h3>things abt me on discord:</h3>
         <p>1) i read all dms but dont always respond, i dont accept friend reqs</p>
         <p>2) mod on <a href="https://discord.gg/vxpe">discord.gg/vxpe</a></p>
         <p>3) originally joined august 16, 2016</p>
         <img src="https://lanyard.cnrad.dev/api/926508334855622726">
-    </body>
+  </div>
+  <div id="scripts" data-tab-content>
+    <h4>stuff that cool people made:</h4>
+        <p><a href="https://7granddadpgn.github.io">Vape V4 For Roblox</a></p>
+        <p><a href="https://moonlight.cool">Moonlight</a></p>
+  </div>
+</div>
+
+<script>
+	function turnpurple(){
+    document.getElementById("specs").style.color="#846DCF";
+}
+function turnpurple1(){
+    document.getElementById("specs1").style.color="#846DCF";
+}
+function turnpurple2(){
+    document.getElementById("specs2").style.color="#846DCF";
+}
+
+console.log("why u looking at console")
+alert(">welcome to my website<")
+
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+</script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6deb9417596b8c4d',m:'FAp.gww8Q7z8WLsQrTjPywEXbNCOmgaVSRTWRx2yG1Q-1645064866-0-AZQpCbDwSWVrEjcDDeNyWis86ffeABsCHZ1R5sq5YCanHnbwua4NLHvwQFmiRg2tLOQgWh4M7Jib46CnXF/jfv93flfD7esWURBBVL5jjFMdoD9Rp9X8ldEGL+nskDIJPn3Thn1lmiodJC6gdycY8cmW65JW0CB1V427UNU1ENzex5PWXOaKRwh1xZmpgkVNAw==',s:[0x77097dc933,0xdc99ac89ff],}})();</script></body>
 </html>
