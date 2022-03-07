@@ -91,6 +91,50 @@ body {
     font-size: 24px;
     animation: rainbow 8s ease infinite;
 }
+
+.line{
+  width:200px;
+  height:20px;
+  background: -webkit-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet);
+  background: -moz-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+  background: -o-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+  background: -ms-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red);
+  background-repeat:repeat-x;
+  
+  -webkit-animation:go 1s linear infinite;
+  -moz-animation:go 1s linear infinite;
+  -o-animation:go 1s linear infinite;
+  -ms-animation:go 1s linear infinite;
+  animation:go 1s linear infinite;
+}
+
+@-webkit-keyframes go{
+  0%{background-position:0;}
+  100%{background-position:200px 0;}
+
+}
+@-moz-keyframes go{
+  0%{background-position:0;}
+  50%{background-position:100px 0;}
+  100%{background-position:200px 0;}
+
+}
+@-o-keyframes go{
+  0%{background-position:0;}
+  100%{background-position:200px 0;}
+
+}
+@-ms-keyframes go{
+  0%{background-position:0;}
+  100%{background-position:200px 0;}
+
+}
+@keyframes go{
+  0%{background-position:0;}
+  100%{background-position:200px 0;}
+
+}
 	</style>
 <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
 <body>
@@ -116,6 +160,7 @@ body {
         <img src="https://lanyard.cnrad.dev/api/926508334855622726">
   </div>
   <div id="scripts" data-tab-content>
+	  <div class="line"></div>
     <h3>stuff that cool people made:</h3>
         <p><a href="https://7granddadpgn.github.io">Vape V4 For Roblox</a></p>
         <p><a href="https://moonlight.cool">Moonlight</a></p>
