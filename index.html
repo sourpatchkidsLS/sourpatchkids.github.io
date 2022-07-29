@@ -39,8 +39,12 @@
       <div class="background">
          <div id="pattern"></div>
          <video id="background" loop="">
-            <source src="img/background.png" type="image/png">
+            <source src="media/vid.mp4" type="video/mp4">
             <script>
+               var video = document.getElementById("background");
+               
+               app.videoElement = video;
+               app.videoElement.volume = 0;
             </script>
          </video>
       </div>
