@@ -7,15 +7,20 @@
 }
 
 body{
-    background-image: url(/a.png);
+    background-image: url(/bg3.png);
     -webkit-backgrund-size: cover;
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    font-family: "Barlow", "serif";
+    font-family: Consolas, monaco, monospace;
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
 }   
 a{
     text-decoration: none;
@@ -29,6 +34,52 @@ header{
     align-items: center;
     padding: 30px 70px;
     justify-content: center;
+    min-height: 100vh;
+    background: url(bg3.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snow, .snow2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(bg3.png);
+    background-position: 0 0;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur5.cur), auto !important;
+}
+
+.snow {
+    background-size: 70em;
+    animation:
+        snowfall 30s linear infinite;
+}
+
+.snow2 {
+    background-size: 50em;
+    animation:
+        snowfall2 30s linear infinite; 
+    opacity: 0.5;
+}
+
+@keyframes snowfall {
+    100% {
+        background-position: 70em 70em;
+    }
+}
+
+@keyframes snowfall2 {
+    100% {
+        background-position: 50em 0;
+    }
 }
 .logo{
     cursor: pointer;
@@ -51,5 +102,7 @@ header{
     color: #fff;
 }
 .nav-area li a:hover{
-    color: grey
+    color: rgb(191, 64, 191);
 }
+
+

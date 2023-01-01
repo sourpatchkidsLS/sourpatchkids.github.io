@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" type="text/css" href="" />
     <script src="/script.js"></script>
-    <title>sour;</title>
+    <title>sour · no rizz?</title>`
     <link rel="icon" type="image/png" href="/shoes.png">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-    <audio id=music src="godwin.mp3" autoplay></audio>
+    <embed src="/bgsound.mp3" loop="true" autostart="true" width="2" height="0">
+    
     <header>
+
+       
         <img src="0.png" alt="" class="logo">
+        <div class="stuff">
+            
+        </div>
         <nav>
             <ul class="nav-area">
                 <li><a href="#"></a></li>
-                <li><a href="https://www.roblox.com/users/1560069377/profile">Roblox</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://discord.com/users/926508334855622726">Discord</a></li>
+                <li><a href="https://github.com/sourpatchkidsLS">GitHub</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="https://youtube.com/c/AuraOP">YouTube</a></li>
                 <li><a href="#"></a></li>
+                <br>
+                <li><a href="">(click home)</a></li>
             </ul>
         </nav>
         <br>
         <br>
     </header>
-    <h1 id="hello" style="color: rgb(191, 64, 191);">Hello World!</h1>  
-    <p style="color: #fff;">⁍ may 12 2008   </p>
-    <p style="color: #fff;">⁍ Owner of "bed" Clan</p>
-    <p style="color: #fff;">⁍ Left Bedwars to Valorant</p>
-    <p style="color: #fff;">⁍ Developer.. I guess?</p>
-    <p style="color: #fff;">⁍ BED Main Team</p>
-    <p style="color: #fff;">⁍ Join BED clan today! discord.gg/bed</p>
-     <br>
-    <i  
-    <br>
-    <img src="https://lanyard.cnrad.dev/api/926508334855622726?borderRadius=5px&idleMessage=no%20rizz"?"&bg=a&animated=true">
-</body>
+   <div id="snow"></div>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+	#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 *{
     box-sizing: border-box;
@@ -48,7 +54,7 @@
 }
 
 body{
-    background-image: url(/bg2.png);
+    background-image: url(/bg3.png);
     -webkit-backgrund-size: cover;
     background-size: cover;
     background-position: center center;
@@ -58,6 +64,10 @@ body{
     font-weight: 600;
     font-size: 16px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
 }   
 a{
     text-decoration: none;
@@ -71,6 +81,52 @@ header{
     align-items: center;
     padding: 30px 70px;
     justify-content: center;
+    min-height: 100vh;
+    background: url(bg3.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snow, .snow2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(bg3.png);
+    background-position: 0 0;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur5.cur), auto !important;
+}
+
+.snow {
+    background-size: 70em;
+    animation:
+        snowfall 30s linear infinite;
+}
+
+.snow2 {
+    background-size: 50em;
+    animation:
+        snowfall2 30s linear infinite; 
+    opacity: 0.5;
+}
+
+@keyframes snowfall {
+    100% {
+        background-position: 70em 70em;
+    }
+}
+
+@keyframes snowfall2 {
+    100% {
+        background-position: 50em 0;
+    }
 }
 .logo{
     cursor: pointer;
@@ -93,17 +149,154 @@ header{
     color: #fff;
 }
 .nav-area li a:hover{
-    color: rgb(191, 64, 191)
+    color: rgb(191, 64, 191);
 }
+
+
 
 </style>
 <script>
-    var vid = document.getElementById("music")
-    vid.volume = 0.5
-
- 
-
-
-
+	document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+        particlesJS("snow", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": false,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 300,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": false
+                }
+            },
+            "retina_detect": true
+        });
+    }
+    document.head.append(script);
+});
 </script>
-</html>
+</body>
+<div id="snow"></div>
+<style>
+	#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+        particlesJS("snow", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": false,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1.5,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 300,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": false
+                }
+            },
+            "retina_detect": true
+        });
+    }
+    document.head.append(script);
+});
+</script>
